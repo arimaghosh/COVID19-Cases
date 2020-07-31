@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+
+.no-js #loader 
+{ 
+    display: none;  
+}
+.js #loader 
+{
+    display: block; position: absolute; left: 100px; top: 0; 
+}
+.se-pre-con 
+{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_8.gif) center no-repeat black;
+}
+*
+{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body
+{
+    background-color:#EBEEE0;
+    font-family: 'Cabin', sans-serif;
+}
+.btn
+{
+    font-size: 1.2rem;
+}
+.part-one
+{
+    display:flex;
+    flex-direction: column;
+    
+    height:100vh;
+    width:100%;
+    color:white;
+    background-image: url(image/covid.jpg);
+    background-size: cover;
+    background-position:center;
+    padding:0;
+}
+.text
+{
+    margin-top:30vh;
+}
+.col-sm-6
+{
+    padding:0;
+}
+.part-two
+{
+    margin:3rem 2rem 3rem 2rem;
+    padding:0;
+}
+#country
+{
+    margin:5rem 3rem 5rem 3rem;
+}
+.name
+{
+    font-size:2rem;
+}
+
+.change-country,.new-value
+{
+    font-size:1.5rem;
+}
+.change-country
+{
+    cursor: pointer;
+}
+.title
+{
+    font-size:2.2rem;
+}
+.value
+{
+    font-size: 2em;
+}
+.hide
+{
+    display:none;
+}
+.search-country
+{
+    position: relative;
+    top: 10px;
+}
+.search-box
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    z-index: 1;
+}
+.search-box input{
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 15px;
+    font-size: 1.1em;
+}
+.search-box img
+{
+    width: 30px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.country-list
+{
+    display: flex;
+    position: relative;
+    top: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+.country-list ul
+{
+    width: 100%;
+}
+
+.country-list ul li
+{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFF;
+}
+.lead ul li
+{
+    list-style: none;
+}
+.country-list ul li:hover
+{
+    border-left: 1px solid #FFF;
+}
+.lead
+{
+    margin:7rem 0;
+}
+#safety
+{
+    background-color:black;
+}
+.safety-image
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height:100vh;
+}
+@media screen and (max-width: 600px)
+{
+    .text
+    {
+    margin-top:10vh;
+    }
+    .part-one
+    {
+        height:70vh;
+    }
+    .part-two
+    {
+        margin:3rem 1rem 3rem 1rem;
+    }
+    #country
+    {
+    margin:5rem 1rem 5rem 1rem;
+    }
+    .change-country,.new-value,.lead ul li
+    {
+        font-size:0.9rem;
+    }
+    .title,.lead h2
+    {
+        font-size:1.2rem;
+    }
+    .value,.lead h3
+    {
+        font-size: 1em;
+    }
+    .safety-image
+    {
+        width:80%;
+    }
+    .search-box input,.country-list,.search-box
+    {
+        width: 250px;
+    }
+    #country
+    {
+        margin:3rem 1rem 3rem 1rem;
+    }
+    .lead
+    {
+        margin:3rem 0;
+    }
+    .country-details
+    {
+        margin-top: 3rem;
+    }
+}
